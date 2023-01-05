@@ -14,6 +14,9 @@ export class CardFormComponent {
       // Validators.maxLength(5),
       // Validators.pattern(/\s/),
     ]),
+    cardNumber: new FormControl(''),
+    expiration: new FormControl(''),
+    securityCode: new FormControl(''),
   });
   constructor() {
     console.log(this.cardForm.get('name'));
